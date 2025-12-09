@@ -1,0 +1,80 @@
+/*************** Reset *********************/
+• {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** midlertidigt *********************/
+body {
+  background-color: #1e1e1e;
+}
+
+/*************** Fonte *********************/
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #ea0004;
+}
+
+p {
+  color: white;
+}
+
+/*************** Medlemmerne *********************/
+.MK {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 50px;
+}
+
+.medlem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.medlem img {
+  width: 100%;
+  display: block;
+}
+
+/* Tekst ovenpå billede */
+.medlem .om_medlem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+
+  color: white;
+  font-family: "Impact", sans-serif; /* skal ændres */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.medlem h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.medlem p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/****************** Desktop/grid - er ikke lavet endnu!!! ****************/
+@media (min-width: 700px) {
+  .team {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+}
