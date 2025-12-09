@@ -1,0 +1,131 @@
+/******************** menu *****************/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363636;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #4051e7;
+}
+
+.menu .round-btn a:hover {
+  color: #ffffff;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+.round-btn {
+  padding: 4px 8px;
+
+  border-radius: 15%;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  background-color: rgb(150, 150, 150);
+  font-size: 1rem;
+}
+.round-btn:hover {
+  background-color: #4051e7; /* ny farve når musen er over */
+  color: white;
+}
+
+@media screen and (max-width: 897px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  nav.active .menu .round-btn {
+    margin-left: auto;
+  }
+}
+
+body {
+  background-color: #1e1e1e;
+}
