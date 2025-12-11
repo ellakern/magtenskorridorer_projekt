@@ -129,3 +129,66 @@ header {
 body {
   background-color: #1e1e1e;
 }
+
+/*************** Footer *********************/
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer {
+  background-color: #363636;
+  font-size: 1rem;
+  /* for at få footeren til altid at være i bunden af siden*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#booking {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.medier {
+  width: 48px;
+  height: 48px;
+}
+
+.socialemedier {
+  align-self: center;
+  justify-self: end;
+  margin-right: 3rem;
+  grid-column: 3/4;
+}
+.socialemedier a {
+  margin-right: 1rem;
+}
+.medier:hover {
+  transform: scale(1.2);
+}
+footer a {
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+}
+
+footer a:hover {
+  color: #4051e7;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: center;
+  margin-left: 3rem;
+}
+
+.logo {
+  width: 150px;
+  place-self: center;
+}
