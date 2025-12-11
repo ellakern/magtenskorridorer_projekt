@@ -10,11 +10,6 @@ img {
   display: block;
 }
 
-/*************** midlertidigt *********************/
-body {
-  background-color: #1e1e1e;
-}
-
 /*************** Fonte *********************/
 h1 {
   font-size: 30px;
@@ -39,6 +34,8 @@ p {
   overflow: hidden;
   border-radius: 10px;
   border: 2px solid white;
+  position: relative;
+  z-index: -1;
 }
 
 .medlem img {
