@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/general_style.css">
     <link rel="stylesheet" href="CSS/book.css">
 
+
 </head>
 
 <body>
@@ -34,10 +35,96 @@
     </header>
     <main>
         <h1>Booking:</h1>
-        <p>Book os, hvis du vil have en aften med fuld power, stærke historier og den helt særlige stemning,
-            vi elsker at skabe sammen med publikum.</p>
-        <p>Booking, management og kontakt: Helter Skelter, Jørn Jeppesen, jj@helterskelter.dk, tlf. +45 4019 9441</p>
 
+        <p>Book os, hvis du ønsker en aften fyldt med energi, fængende fortællinger og den helt unikke stemning, vi
+            elsker at skabe
+            sammen med publikum.</p>
+        <div class="boldp">
+            <p>Booking, management og kontakt:</p>
+            <p>Helter Skelter, Jørn Jeppesen, jj@helterskelter.dk, tlf. +45 4019 9441</p>
+        </div>
+
+        <section id="form-section">
+            <article id="form-info">
+                <p>Har du en sjov oplevelse fra en af vores koncerter, nogle særlige ønsker eller bare noget på hjerte,
+                    så udfyld gerne
+                    denne formular. Det hjælper os med at forberede vores koncerter og imødekomme jeres ønsker. </p>
+                <p>Du er også altid velkommen til at skrive til os på mail, hvis du har spørgsmål:
+                    <strong>skrivtilos@magtenskorridorer.dk</strong>
+                </p>
+            </article>
+            <form id="webform">
+                <fieldset>
+                    <div class="form-group1">
+                        <label for="f-text">Navn: <span class="required">*</span></label>
+                        <input id="f-text" type="text" name="hundname" placeholder="Dit fulde navn"
+                            aria-describedby="fname-error" required />
+                        <p class="error-message" id="fname-error"></p>
+                    </div>
+                    <div class="form-group1">
+                        <label for="f-email">Email: <span class="required">*</span></label>
+                        <input id="f-email" type="text" name="hundname" aria-describedby="fname-error" required />
+                        <p class="error-message" id="fname-error"></p>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-group2">
+                        <label for="f-date">Dato: <span class="required">*</span></label>
+                        <input id="f-date" type="date" name="dato" aria-describedby="fdate-error" required />
+                        <p class="error-message" id="fdate-error"></p>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="event">
+                        <label class="place" for="event">Event type: <span class="required">*</span></label>
+                        <input id="event" type="text" name="event" placeholder="Hvad foretrækker du?">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="antal">
+                        <label for="slider">Antal mennesker vi skal spille for:</label>
+                        <input type="range" id="slider" name="slider" min="100" max="1000" value="500" />
+                        <span id="sliderValue">500 </span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="checkbox1">
+                        <h2>Hvor har du hørt om os?: <span class="required"></span></h2>
+                        <label>
+                            <input type="checkbox" id="check1" name="face" value="facebook">
+                            Facebook
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check2" name="insta" value="instagram">
+                            Instagram
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check3" name="spotify" value="spotify">
+                            Spotify
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check4" name="google" value="google">
+                            Google
+                        </label>
+
+                    </div>
+                </fieldset>
+                <div class="form-group4">
+                    <label for="accept_terms">
+                        Accept terms
+                        <input type="checkbox" id="accept_terms" name="accept_terms" value="yes" required />
+                        <span class="required">*</span>
+                    </label>
+                    <p class="error-message" id="terms-error"></p>
+                </div>
+                <button id="submit_btn" type="submit">SEND</button>
+
+            </form>
+        </section>
     </main>
     <footer>
         <div class="grid_1-1-1">
@@ -59,6 +146,7 @@
     </footer>
     <script src="JS/burger.js"></script>
     <script src="JS/login.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
