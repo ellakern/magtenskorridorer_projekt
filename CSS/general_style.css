@@ -11,6 +11,40 @@
   --color-headerogfooterfarve: #1e1e1e;
 }
 
+/******* skriftstørrelser *******************/
+h1 {
+  font-size: 2.5rem;
+  font-family: "Special Elite", system-ui;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: "Special Elite", system-ui;
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: "Special Elite", system-ui;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Amarna", sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    max-width: 60ch;
+  }
+}
+
 /******************** menu *****************/
 header {
   position: sticky;
