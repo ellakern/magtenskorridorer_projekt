@@ -1,5 +1,5 @@
 /*************** Reset *********************/
-• {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,7 +35,14 @@ p {
   border-radius: 10px;
   border: 2px solid white;
   position: relative;
-  z-index: -1;
+}
+
+.billede {
+  position: relative;
+}
+
+.img.hover {
+  display: none;
 }
 
 .medlem img {
@@ -67,11 +74,44 @@ p {
   font-size: 1rem;
 }
 
-/****************** Desktop/grid - er ikke lavet endnu!!! ****************/
 @media (min-width: 700px) {
-  .team {
+  .MK {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+  }
+
+  .mod_bandet {
+    place-self: center;
+    padding: 0rem 15rem 0rem 15rem;
+  }
+
+  .billede {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .img.hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .medlem:hover .img.hover {
+    opacity: 1;
+  }
+
+  .medlem:hover .img.normal {
+    opacity: 0;
+  }
+
+  .medlem:hover .img {
+    transform: scale(1.05);
   }
 }
