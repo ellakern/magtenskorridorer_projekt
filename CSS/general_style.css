@@ -68,6 +68,10 @@ header {
   font-weight: bold;
 }
 
+.logo {
+  max-width: 120px;
+}
+
 .menu li {
   margin-right: 20px;
 }
@@ -129,6 +133,11 @@ header {
   .menu {
     display: none;
   }
+
+  .logo {
+    max-width: 70px;
+  }
+
   .burger {
     display: block;
     background-color: transparent;
