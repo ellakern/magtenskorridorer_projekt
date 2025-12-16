@@ -1,0 +1,54 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+video {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #c800fa;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: #c800fa;
+  line-height: 3rem;
+}
+
+p {
+  color: white;
+  line-height: 2rem;
+}
+
+.tourplan {
+  margin: 10px;
+}
+
+@media (min-width: 750px) {
+  .tourplan {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  video,
+  img {
+    margin: 20px auto;
+  }
+}
