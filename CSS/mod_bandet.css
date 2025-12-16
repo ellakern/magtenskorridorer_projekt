@@ -15,10 +15,13 @@ h1 {
   font-size: 30px;
   text-align: center;
   color: #ea0004;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 p {
   color: white;
+  margin-bottom: 1rem;
 }
 
 /*************** Medlemmerne *********************/
@@ -27,6 +30,14 @@ p {
   flex-direction: column;
   gap: 1.5rem;
   padding: 50px;
+}
+
+.mod_bandet {
+  margin: 1rem;
+}
+
+.mod-bandet-img {
+  margin-bottom: 1rem;
 }
 
 .medlem {
@@ -83,7 +94,7 @@ p {
 
   .mod_bandet {
     place-self: center;
-    padding: 0rem 15rem 0rem 15rem;
+    width: 70%;
   }
 
   .billede {
