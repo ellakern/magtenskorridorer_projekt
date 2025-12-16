@@ -39,9 +39,9 @@ p {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
-    max-width: 60ch;
+    max-width: 65ch;
   }
 }
 
@@ -54,7 +54,8 @@ header {
   align-items: center;
   background-color: var(--color-headerogfooterfarve);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10px;
+  z-index: 1000;
+  padding: 20px;
 }
 
 .menu {
@@ -132,10 +133,8 @@ header {
     display: block;
     background-color: transparent;
     border: 0;
-    position: absolute; /* gør det muligt at placere burgeren præcist */
-    top: 20px; /* afstand fra toppen */
-    right: 20px; /* flytter burgeren ind fra højre kant */
     z-index: 10; /* sørger for at burgeren ligger over andet indhold */
+    right: 20px;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -155,13 +154,14 @@ header {
   nav.active .menu {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-headerfarve);
+    background-color: #1e1e1e;
     position: absolute;
     top: 150px;
     left: 0;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    text-align: right;
   }
 
   nav.active .menu li {
