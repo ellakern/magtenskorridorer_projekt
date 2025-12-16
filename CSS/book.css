@@ -1,6 +1,8 @@
 /******* farver *******************/
 :root {
   --color-bookfarve: #ef6c00;
+  --color-baggrundfarve: #363636;
+  --color-boksfarve: #b5b5b5;
 }
 
 /********* tekst *********/
@@ -13,9 +15,32 @@ p {
   color: white;
   place-self: center;
 }
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .boldp {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid var(--color-boksfarve); /* sort kant */
+  padding: 10px; /* afstand mellem tekst og kant */
+  margin: 20px auto; /* afstand til andre elementer */
+  width: 300px;
+  border-radius: 8px; /* rundede hjørner (valgfrit) */
+  background-color: var(--color-baggrundfarve); /* lys baggrund (valgfrit) */
+}
+
+@media (min-width: 750px) {
+  .boldp {
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid var(--color-boksfarve); /* sort kant */
+    padding: 10px; /* afstand mellem tekst og kant */
+    margin: 20px auto; /* afstand til andre elementer */
+    width: 780px;
+    border-radius: 8px; /* rundede hjørner (valgfrit) */
+    background-color: var(--color-baggrundfarve); /* lys baggrund (valgfrit) */
+  }
 }
 
 #form-info {
@@ -115,4 +140,33 @@ form {
 #submit_btn:hover {
   background-color: #a91b10; /* lidt mørkere farve ved hover */
   transform: scale(1.05); /* gør knappen lidt større når man peger på den */
+}
+
+/****** styling af billederne på book siden ************/
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 kolonne på mobil */
+  gap: 0px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 500px;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.bil2 {
+  margin-bottom: 4rem; /* lidt luft til footer */
+}
+
+@media (min-width: 750px) {
+  .image-grid {
+    grid-template-columns: 1fr 1fr; /* 2 kolonner */
+    gap: 20px;
+    margin-bottom: 2rem;
+  }
 }

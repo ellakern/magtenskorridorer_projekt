@@ -54,6 +54,7 @@ header {
   align-items: center;
   background-color: var(--color-headerogfooterfarve);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10px;
 }
 
 .menu {
@@ -131,6 +132,10 @@ header {
     display: block;
     background-color: transparent;
     border: 0;
+    position: absolute; /* gør det muligt at placere burgeren præcist */
+    top: 20px; /* afstand fra toppen */
+    right: 20px; /* flytter burgeren ind fra højre kant */
+    z-index: 10; /* sørger for at burgeren ligger over andet indhold */
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
