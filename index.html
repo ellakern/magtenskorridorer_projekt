@@ -6,11 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/general_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"></a></li>
+                <li><a href="tourplan_billetter.html">Tourplan og billetter</a></li>
+                <li><a href="mod_bandet.html">Mød bandet</a></li>
+                <li><a href="book.html">Kontakt og booking</a></li>
+                <li class="round-btn"> <a href="https://beatdown.dk/collections/magtens-korridorer">Shop</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
     <main class="mobile">
-        <div class="grid_1-1-1">
+        <div class="grid_3-1">
             <div class="img1">
                 <img src="img1.png" alt="img1">
             </div>
@@ -36,12 +70,32 @@
             <div class="img4">
                 <img src="img4.png" alt="img4">
             </div>
-        </div>
+        </div>x
     </main>
-
     <div class="collage">
-        <h1>Magtens korridorer</h1>
+        <h1 class="box-1">Magtens Korridorer</h1>
     </div>
+
+    <footer>
+        <div class="grid_1-1-1">
+            <div class="links">
+
+                <a href="tourplan_billetter.html">Tourplan og billetter</a>
+                <a href="book.html">Booking: jj@helterskelter.dk</a>
+            </div>
+
+            <div class="socialemedier">
+                <a href="https://www.instagram.com/magtenskorridorer/"><img class="medier" src="instagram.png"
+                        alt="instagram"></a>
+                <a href="https://www.facebook.com/MagtensKorridorer"><img class="medier" src="facebook.png"
+                        alt="facebook"></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="JS/burger.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 
