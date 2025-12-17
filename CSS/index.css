@@ -1,3 +1,10 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .mobile {
   display: none;
 }
@@ -75,23 +82,27 @@
   }
   .img5 {
     grid-column: 1/3;
-    grid-row: 2/3;
+    grid-row: 1/3;
     padding: 30px;
   }
 
   .img8 {
     grid-column: 2/4;
-    grid-row: 3/5;
+    grid-row: 2/5;
     padding: 40px;
   }
 
   .img4 {
     grid-column: 3/5;
-    grid-row: 1/3;
+    grid-row: 1/2;
     padding: 70px;
+    margin-bottom: 100px;
   }
   .collage {
     display: none;
+  }
+  main {
+    padding-bottom: 20px;
   }
 
   /******* Syle *****/
@@ -113,9 +124,12 @@
     padding: 0;
   }
 
+  /** fonts ***/
+
   .MK {
     padding-top: 100px;
-
+    font-family: "Rubik Distressed", system-ui;
+    color: white;
     font-size: 1rem;
     text-align: center;
   }
