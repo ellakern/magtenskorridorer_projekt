@@ -1,6 +1,6 @@
 /******* farver *******************/
 :root {
-  --color-baggrundfarve: #363636;
+  --color-baggrundfarve: #1e1e1e;
 
   --color-tekstfarve: #ffffff;
 
@@ -8,13 +8,15 @@
 
   --color-knapfarve: #969696;
 
-  --color-headerogfooterfarve: #1e1e1e;
+  --color-headerogfooterfarve: #363636;
 }
 
 /******* skriftstørrelser *******************/
 h1 {
   font-size: 2.5rem;
   font-family: "Special Elite", system-ui;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -66,10 +68,6 @@ header {
   margin-right: 3rem;
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.logo {
-  max-width: 120px;
 }
 
 .menu li {
@@ -132,10 +130,6 @@ header {
 @media screen and (max-width: 897px) {
   .menu {
     display: none;
-  }
-
-  .logo {
-    max-width: 70px;
   }
 
   .burger {

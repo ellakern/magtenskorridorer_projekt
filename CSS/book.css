@@ -1,7 +1,13 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /******* farver *******************/
 :root {
   --color-bookfarve: #ef6c00;
-  --color-baggrundfarve: #363636;
   --color-boksfarve: #b5b5b5;
 }
 
@@ -125,7 +131,9 @@ form {
   margin-top: 2rem;
   display: block;
   margin: 1rem auto;
-  background-color: var(--color-bookfarve); /* vælg din farve (rødlig nuance fx) */
+  background-color: var(
+    --color-bookfarve
+  ); /* vælg din farve (rødlig nuance fx) */
   color: white; /* tekstfarve */
   border: none; /* fjern standardkant */
   border-radius: 50px; /* gør den rund (jo større tal, jo rundere) */
